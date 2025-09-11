@@ -1,0 +1,83 @@
+@font-face{
+	font-family: "titulo";
+	src: url(../media/fonts/FutuBk__.ttf);
+}
+@font-face{
+	font-family: "cuerpo";
+	src: url(../media/fonts/FutuBk__.ttf);
+}
+
+*{
+	font-family: cuerpo;
+}
+
+.soloBordeAbajo{
+	border: none;
+	padding-top: 15px;
+	padding-left: 15px;
+	border-bottom: 1px solid black;
+	padding-right: 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+/*el borde azul de chorme fuera*/
+input:focus {
+	outline: 0 !important;
+}
+/*el borde azul de chorme fuera*/
+select:focus {
+	outline: 0 !important;
+}
+
+/*quitamos el amarillo del textbox de chrome*/
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	-webkit-text-fill-color: #000;
+}
+
+img{
+	cursor: pointer;
+}
+
+li, h1, p{
+	color: white
+}
+
+.legend {
+	list-style:none;
+	font-size: 10pt;
+	margin-left: -40px;
+	cursor: default;
+}
+
+.legend ul{
+	display: inline-grid;
+}
+
+.legend ul li{
+	list-style:none;
+	margin-bottom: 20px;
+	display: inline;
+	margin-left: 15px;
+}
+.legend ul li span{ 
+	width:20px; 
+	height:8px;
+	display:inline-block; 
+	margin-right:5px; 
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+#confirmacion div:hover{
+	color: black !important;
+	background-color: white;
+}
+
+
+
+#divBotonPadre div:hover{
+	color: black !important;
+	background-color: white !important;
+}

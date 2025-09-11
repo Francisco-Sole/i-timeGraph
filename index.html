@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; background-color: #2E4172; overflow-x: hidden; background-image: url(media/img/fondo.png);">
+<head>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/framework/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/framework/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/framework/chart.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>I-time Informes</title>
+</head>
+<body>
+	<div id="sombra" style="width: 100%; height: 100%;background-color: rgba(0, 2, 0, 0.2); position: fixed;top: 0px; left: 0px;display: none"></div>
+	<h1 style="font-family: titulo; padding:15px;">I-time Informe</h1>
+	<!-- <div id='divLogin' style="margin-left: 15px;position: fixed;margin-left: calc( 50% - 220px ); background-color: #2E4172; padding: 60px;">
+		<form id="formLogin" action="php/valida_user.php" method="POST">
+			<p style="font-family: cuerpo; width: 100%; font-size: 20pt; margin-top: -5px;">Login</p>
+			<input type="text" name="user" id="user" placeholder="Nombre usuario">
+			<input type="password" name="passwd" id="passwd" placeholder="Password" onkeypress="miraTeclas(event)">
+			<input type="button" name="btnSubmit" id="btnSubmit" value="Validar" onclick="doLogin()">			
+		</form>
+	</div> -->
+	<div id="departamentos" style="float: left;width: 15%;margin-left: 20px;">
+
+	</div>
+	<div id="familias" style="float: left;width: 15%;">
+
+	</div>
+	<div id="subfamilias" style="float: left;width: 15%;">
+
+	</div>
+	<div id="subfamilias1" style="float: left;width: 15%;">
+
+	</div>
+	<div id="subfamilias2" style="float: left;width: 15%;">
+
+	</div>
+	<div id="empleados" style="float: left;width: 15%;">
+
+	</div>
+	<div id="confirmacion" style="float: left;width: 15%;margin-top: 51px;margin-left: 20px;background-color: transparent; border: 3px solid white; cursor: pointer;">
+		<div style="float: left;width:calc(100% - 30px); padding: 15px;font-weight: 900;text-align: center;color: white" onclick="previsualizacion()">Añadir tarea</div>
+	</div>
+	<div id="fechas" style="float: left;width: 100%;margin-top: 51px;margin-left: 20px;padding: 40px;">
+		<div style="float: left;width: 100%;color: white; font-weight: 900">
+			<span>Desde</span>
+			<span style="margin-left: 220px">Hasta</span>
+		</div>
+		<div style="float: left;width: 100%;">
+			<input style="padding: 10px;width: 239px;" type="date" name="desde" id="desde">
+			<input style="padding: 10px;width: 239px;" type="date" name="hasta" id="hasta">
+		</div>
+	</div>
+	<div id="descripcion" style="float: left;width: calc(100% - 100px);font-weight: 900; padding: 50px;">
+		<span style="font-weight: 900; color: white;">Tareas</span>
+	</div>	
+	<div id="divBotonPadre" style="float: left;width: 100%">
+		<div id="divBoton" onclick='enviarDatos()' style="float: left;width: calc(50% - 40px); padding: 20px; cursor: pointer;text-align: center; margin-left: 25%;background-color: transparent; border: 3px solid white; color: white;font-weight: 900">
+			Grafico
+		</div>
+	</div>
+	<div id="infoGraficoVisionGeneral" style="float: left; width: calc(100% - 50px);color: white;margin-left: 50px;margin-top: 15px;margin-bottom: 20px;"></div>
+	<div id="contenedorGrafico1" style="float:left; width:900px;margin-top: 25px;height: 450px;margin-left: -200px">
+		<canvas id="visionGeneral" style="height: 100%;"></canvas>
+	</div>
+	<div id="legendGraficovisionGeneral" style="float: left; width: 65%;margin-top: 11px;margin-bottom: 15px;" class="legend"></div>
+
+	<div style="float: left;width: 100%">
+		<div id="contenedorGrafico2" style="float:left; width:100%;margin-top: 25px;height: 300px;">
+			<canvas id="visionPorEmpleado" style="width:100%;" ></canvas>
+		</div>
+		<div id="legendGraficovisionPorEmpleado" style="float: left; width: 100%;margin-top: 11px;margin-bottom: 15px;" class="legend"></div>
+	</div>
+	
+
+
+
+	
+
+</body>
+</html>
+
