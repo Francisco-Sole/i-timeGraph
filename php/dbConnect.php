@@ -1,5 +1,5 @@
 <?php
-$link = new mysqli("10.2.232.13", "franc", "capsulecorp", "controlHoras");
+$link = new mysqli("127.0.0.1", "root", "", "controlHoras");
 
 $link->set_charset("utf8");
 ?>
